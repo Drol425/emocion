@@ -15,7 +15,7 @@ $api_key_flickr = '';
 $client = new FppClient($apiKey, $apiSecret, $host);
 
 $url_album = 'https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key='.$api_key_flickr.'&user_id=144522605%40N06&format=json&nojsoncallback=1';
-//$url_tag = 'https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=90140cc133aa24fd8303c4a8f1f0885b&tags=%23int20&format=json&nojsoncallback=1';
+
   $ch = curl_init(); 
   curl_setopt($ch, CURLOPT_URL, $url_album); 
   curl_setopt($ch, CURLOPT_HEADER, false); 
